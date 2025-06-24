@@ -1,5 +1,4 @@
 const {test, expect} = require('@playwright/test');
-const exp = require('constants');
 
 test('Проверяю успешный статус код', async ({ request }) => {
     const response = await request.get('https://jsonplaceholder.typicode.com/posts')
